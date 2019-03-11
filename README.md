@@ -2,7 +2,7 @@
 
 Instructions for the workshop on April 13, 2019 at Institute of Advanced Computational Sciences (IACS) at Stony Brook University.
 
-I will be using GDB (GNU Project Debugger) for all examples.  To prevent the need for everyone to have GDB installed on their computers and be familiar with unix, the examples can be completed using the web based gdb found at https://www.onlinegdb.com/.  There are instructions in the repository (OnlineGDB-Instructions.pdf) for how to take an example and get yourself to a gdb command prompt so that you can follow along interactively.
+We will be using GDB (GNU Project Debugger) for all examples.  To prevent the need for everyone to have GDB installed on their computers and be familiar with unix, the examples can be completed using the web based gdb found at https://www.onlinegdb.com/.  There are instructions in the repository (OnlineGDB-Instructions.pdf) for how to take an example and get yourself to a gdb command prompt so that you can follow along interactively.
 
 Below are some brief instructions for installing GDB (if necessary) for various OS.
 
