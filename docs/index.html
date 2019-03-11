@@ -60,7 +60,8 @@ the command line tool <b>GDB<\b> and provide interactive examples to get you sta
   </div>
 
 <h2>Instructions</h2>
-<p>
+<textarea id="text-input" oninput="this.editor.update()"
+              rows="6" cols="60">
   Below are some brief instructions for installing GDB (if necessary) for various OS.
 
 **Linux:**   
@@ -81,7 +82,20 @@ the command line tool <b>GDB<\b> and provide interactive examples to get you sta
 - Open the Windows command prompt by searching for `cmd`
 - To open the GDB program, type into the command prompt: `c:\mingw\bin\gdb.exe`
 - _You may get an error if you are missing any libraries or dependencies. For example, a possible error is the lack of a gcc compiler. To fix this, simply search for a package that seems reasonable, such as "mingw32-gcc" and install it._
- </p>
+    </textarea>
+    <div id="preview"> </div>
+    <script src="lib/markdown.js"></script>
+    <script>
+      function Editor(input, preview) {
+        this.update = function () {
+          preview.innerHTML = markdown.toHTML(input.value);
+        };
+        input.editor = this;
+        this.update();
+      }
+      var $ = function (id) { return document.getElementById(id); };
+      new Editor($("text-input"), $("preview"));
+    </script>
   
 </body>
 
