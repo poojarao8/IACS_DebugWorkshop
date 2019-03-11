@@ -6,12 +6,14 @@
 
 <body bgcolor=FFFFFF>
 
-<h1>Wokshop: A Practical Introduction to Debugging</h1>
+<h1>Workshop: A Practical Introduction to Debugging</h1>
 
 <h2>Description</h2>
 
 
-<p>This workshop is designed for beginners.  We will introduce how to approach debugging computer programs using the command line tool gdb and provide interactive examples to get you started.  We will also introduce you to memory debugging with valgrind and discuss options for debugging computer programs that utilize parallel processing.</p>
+<p>This workshop is designed for beginners.  We will introduce participants to tools useful in debugging computer programs.  We will use 
+the command line tool <b>GDB<\b> and provide interactive examples to get you started.  We will also introduce you to memory debugging with 
+<b>valgrind<\b> and discuss options for debugging computer programs that utilize parallel processing.</p>
 
 
 <hr>
@@ -26,18 +28,18 @@
 
 <h2>Learning Goals</h2>
 <ol>
-  <li>This little piggy went to market
-  <li>This little piggy went to SB228 class
-  <li>This little piggy went to an expensive restaurant in Downtown Palo Alto
-  <li>This little piggy ate too much at Indian Buffet.
-  <li>This little piggy got lost
+  <li>Familiarity with <b>GDB<\b> and its basic commands
+  <li>Ability to use a debugger to investigate basic issues in a computer program
+  <li>How to use <b>valgrind<\b> to investigate memory leaks
+  <li>Potential approaches to debugging programs built for parallel architecture
 </ol>
 
 <h2>Topics Covered</h2>
 <ul>
-  <li>First element
-  <li>Second element
-  <li>Third element
+  <li>Basic commands with GDB
+  <li>Memory debugging with valgrind
+  <li>Additional commands and features of GDB
+  <li>Approaches to parallel debugging
 </ul>
 
 <hr>
@@ -58,8 +60,29 @@
   </div>
 
 <h2>Instructions</h2>
-<p>Put instructions here.</p>
+<p>
+  Below are some brief instructions for installing GDB (if necessary) for various OS.
 
+**Linux:**   
+- GDB should come installed as a standard package on your system.  Check to see if it is installed by typing `gdb --v`.
+- If you don't already have it, you should be able to install it using your package manager or from https://www.gnu.org/software/gdb/download/.
+  
+**Mac:**   
+- First open your terminal and install the Brew package manager by typing `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`.
+- Use Brew to install the GDB application: `brew install gdb`
+- To check the installation, type `gdb --v` and you'll see the software version if the installation was successful.
+  
+**Windows:**   
+- The simplest way to install GDB is within MinGW (Minimalist GNU for Windows). Clicking the following link will start the download: https://sourceforge.net/projects/mingw/files/latest/download
+- Complete the MinGW installation in the usual Windows fashion. The default settings should be sufficient.
+- A Graphical User Interface (GUI) should automatically pop up. If not, navigate to `C:\MinGW\libexec\mingw-get\guimain.exe` and execute the program. This should bring up the GUI window.
+- Use the GUI to install the "mingw32-gbd bin" package. Click on the box to mark it for installation.
+- To complete the installation, click on `Installation` &rarr; `Apply Changes`, then click on `Apply` in the resulting window.
+- Open the Windows command prompt by searching for `cmd`
+- To open the GDB program, type into the command prompt: `c:\mingw\bin\gdb.exe`
+- _You may get an error if you are missing any libraries or dependencies. For example, a possible error is the lack of a gcc compiler. To fix this, simply search for a package that seems reasonable, such as "mingw32-gcc" and install it._
+ </p>
+  
 </body>
 
 </html>
