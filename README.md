@@ -36,16 +36,25 @@ Valgrind source code: http://valgrind.org/downloads/
 
 
 **Unix**:
+
 sudo apt install valgrind
 
 **Mac**:
+
 Brew install:
+
 brew install valgrind
 
 Manual install:
+
 Download source code from here: http://valgrind.org/downloads/
+
 cd path/to/valgrind-x.x.0
+
 Go through the file README and do the following:
+
 ./configure --prefix=/usr/local
+
 make
+
 sudo make install
