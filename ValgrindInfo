@@ -1,0 +1,13 @@
+Valgrind is a tool to detect memory leaks in your programs. We will go through simple examples to show how to read the output from Valgrind in simple context.
+
+Things it can detect:
+1. Dangling pointers
+2. Memory leaks
+3. Uninitialized data
+4. Writing past array boundary
+
+Valgrind homepage:
+http://www.valgrind.org/
+
+Let’s try with memory leaks and writing past array bounds.
+
