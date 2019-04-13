@@ -50,11 +50,14 @@ Manual install:
 
 Download source code from here: http://valgrind.org/downloads/
 
+Untar the file using:
+tar -vxjf valgrind-x.x.0.tar.bz2
+
 cd path/to/valgrind-x.x.0
 
 Go through the file README and do the following:
 
-./configure --prefix=/usr/local
+./configure --prefix=/path/where/you/want/it/installed
 
 make
 
