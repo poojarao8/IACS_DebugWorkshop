@@ -28,5 +28,23 @@ Below are some brief instructions for installing GDB (if necessary) for various 
 - To open the GDB program, type into the command prompt: `c:\mingw\bin\gdb.exe`
 - _You may get an error if you are missing any libraries or dependencies. For example, a possible error is the lack of a gcc compiler. To fix this, simply search for a package that seems reasonable, such as "mingw32-gcc" and install it._
 
+***Valgrind installation instructions***
+
+Valgrind homepage: http://www.valgrind.org/
+Valgrind source code: http://valgrind.org/downloads/
 
 
+**Unix**:
+sudo apt install valgrind
+
+**Mac**:
+Brew install:
+brew install valgrind
+
+Manual install:
+Download source code from here: http://valgrind.org/downloads/
+cd path/to/valgrind-x.x.0
+Go through the file README and do the following:
+./configure --prefix=/usr/local
+make
+sudo make install
